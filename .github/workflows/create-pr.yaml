@@ -38,3 +38,4 @@ jobs:
               --arg head "$BRANCH_NAME" \
               --arg base "$BASE_BRANCH" \
               '{title: $title, head: $head, base: $base, body: "Automatically created Pull Request to merge $head --> $base"}')"
+              
