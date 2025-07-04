@@ -52,3 +52,4 @@ jobs:
       - name: Deploy via SCP
         run: |
           scp -r app/* github@marco-lenschau.de:/var/www/html/docs/
+          
