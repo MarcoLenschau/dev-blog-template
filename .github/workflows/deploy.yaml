@@ -41,7 +41,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-folder
-          path: github-pages
+          path: app
 
       - name: Set up SSH Key
         run: |
