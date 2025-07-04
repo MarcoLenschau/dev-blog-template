@@ -28,7 +28,7 @@ jobs:
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: github-pages
+          path: app
 
   deploy:
     name: Deploy via SSH
