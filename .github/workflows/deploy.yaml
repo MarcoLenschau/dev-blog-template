@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to SSH Server
 
 on:
   workflow_call:
@@ -28,7 +28,7 @@ jobs:
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: github-pages
+          path: app
 
   deploy:
     name: Deploy via SSH
@@ -40,8 +40,7 @@ jobs:
       - name: Download Build Artifact
         uses: actions/download-artifact@v4
         with:
-          name: build-folder
-          path: github-pages
+          path: app
 
       - name: Set up SSH Key
         run: |
